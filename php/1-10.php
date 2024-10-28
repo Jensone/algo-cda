@@ -67,10 +67,13 @@ $nombres = [random_int(1, 100), random_int(1, 100), random_int(1, 100)];
 echo array_sum($nombres);
 
 // Exercice 10 : Calculer le Prix TTC avec Remise d'un Magasin
-$prix = random_int(1, 100);
+// Défifinir la TVA à 1.2 et la réduction comme vous voulez
+
+$prix = random_int(1, 500);
 
 if ($prix > 200) {
-    echo $prix * 0.8;
+    $total = ($prix * 0.8) * 1.2;
+    echo $total;
 } else {
     echo $prix * 1.2;
 }

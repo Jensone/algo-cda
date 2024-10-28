@@ -60,9 +60,11 @@ nombres = [random.randint(1, 100), random.randint(1, 100), random.randint(1, 100
 print(sum(nombres))
 
 # Exercice 10 : Calculer le Prix TTC avec Remise d'un Magasin
-prix = random.randint(1, 100)
+# Défifinir la TVA à 1.2 et la réduction comme vous voulez
+prix = random.randint(1, 500)
 
 if prix > 200:
-    print(prix * 0.8) 
+    total = (prix * 0.8) * 1.2
+    print(total) 
 else:
     print(prix * 1.2)

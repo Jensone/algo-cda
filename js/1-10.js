@@ -66,10 +66,12 @@ let nombres_somme = [
 console.log(nombres_somme.reduce((a, b) => a + b, 0));
 
 // Exercice 10 : Calculer le Prix TTC avec Remise d'un Magasin
-let prix = Math.floor(Math.random() * 100) + 1;
+// Défifinir la TVA à 1.2 et la réduction comme vous voulez
+let prix = Math.floor(Math.random() * 500) + 1;
 
 if (prix > 200) {
-    console.log(prix * 0.8);
+    let total = (prix * 0.8) * 1.2;
+    console.log(total);
 } else {
     console.log(prix * 1.2);
 }
