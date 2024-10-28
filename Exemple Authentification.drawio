@@ -1,0 +1,120 @@
+<mxfile host="app.diagrams.net" modified="2024-05-22T07:28:14.226Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="rsdxNC4ppVN8WjamZpIP" version="24.3.1" type="google">
+  <diagram name="Page-1" id="HRb_BwN4hRwb76MAPD-i">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Système d&#39;authentification&lt;/h1&gt;&lt;p&gt;Algorithme d&#39;authentification à une application web.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-3" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Données d&#39;entrée&lt;/h1&gt;&lt;p&gt;login = &quot;martin@gmail.com&quot;&lt;/p&gt;&lt;p&gt;password = &quot;LesPoulesNeVolentPas&quot;&lt;/p&gt;&lt;p&gt;attemps = 0&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="160" width="360" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-5" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Description&lt;/h1&gt;&lt;p&gt;L&#39;utilisateur se rend sur la page de connexion, il saisit ses informations de connexion (email, mot de passe). Si les informations saisies ont une correspondance en base de données, alors l&#39;utilisateur est authentifié puis redirigé vers sa page de profil.&lt;/p&gt;&lt;p&gt;Sinon, un message d&#39;erreur est affiché sur la page, l&#39;utilisateur est invité à re-saisir ses identifiants et le nombre de tentatives incrémente.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="360" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-6" target="DtwQARBTIAGkUV5gzUFV-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-6" value="Début" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="360" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-7" target="DtwQARBTIAGkUV5gzUFV-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="570" />
+              <mxPoint x="649" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-7" value="Récupération&lt;div&gt;de &lt;b&gt;login&lt;/b&gt; et &lt;b&gt;password&lt;/b&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="296" y="490" width="168" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-14" value="OUI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-11" target="DtwQARBTIAGkUV5gzUFV-13">
+          <mxGeometry x="0.0105" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-11" target="DtwQARBTIAGkUV5gzUFV-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-21" value="NON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="DtwQARBTIAGkUV5gzUFV-20">
+          <mxGeometry x="-0.1633" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-11" value="S&#39;il y a&lt;div&gt;correspondance&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="312.5" y="597.5" width="135" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-13" target="DtwQARBTIAGkUV5gzUFV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-13" value="L&#39;utilisateur est authentifié" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="302.5" y="720" width="155" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-15" target="DtwQARBTIAGkUV5gzUFV-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-15" value="L&#39;utilisateur est redirigé&lt;div&gt;vers sa page de profil&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="302.5" y="820" width="155" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-17" value="Fin" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="900" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-19" target="DtwQARBTIAGkUV5gzUFV-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-19" value="Afficher un message&lt;div&gt;d&#39;erreur sur l&#39;interface&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="602.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-22" target="DtwQARBTIAGkUV5gzUFV-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-22" value="Incrémentation du nombre de tentatives" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-26" target="DtwQARBTIAGkUV5gzUFV-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-30" value="NON" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="DtwQARBTIAGkUV5gzUFV-29">
+          <mxGeometry x="-0.0635" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-26" target="DtwQARBTIAGkUV5gzUFV-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="632" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-37" value="OUI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="DtwQARBTIAGkUV5gzUFV-33">
+          <mxGeometry x="-0.0033" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-26" value="Si &lt;b&gt;attemps&lt;/b&gt;&amp;nbsp;&amp;gt; 2" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="588" y="592.5" width="122" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-32" target="DtwQARBTIAGkUV5gzUFV-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-32" value="Afficher un message&lt;div&gt;de limite d&#39;essai&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="DtwQARBTIAGkUV5gzUFV-34" target="DtwQARBTIAGkUV5gzUFV-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtwQARBTIAGkUV5gzUFV-34" value="Enclencher un délai de 15 min pour réessayer" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
