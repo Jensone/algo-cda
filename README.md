@@ -10,6 +10,7 @@ Les langages de programmation recommandés pour ces exercices sont :
 - Bash (Shell)
 - PowerShell
 - JavaScript
+- PHP
 
 ---
 
